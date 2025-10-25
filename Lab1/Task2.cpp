@@ -2,7 +2,6 @@
 using namespace std;
 int binarySearch(int arr[], int n, int target, int &count) {
     int left = 0, right = n - 1;
-    cout << "---------------------------------------\n";
     cout << "Step Left Right Mid arr[Mid]\n";
     while (left <= right) {
         count++;
@@ -10,8 +9,7 @@ int binarySearch(int arr[], int n, int target, int &count) {
         cout << count << " " << left << " " << right << " " << mid 
              << " " << arr[mid] << endl;
         if (arr[mid] == target) {
-            cout << "---------------------------------------\n";
-            cout << "Target " << target << " found at index " << mid <<endl;
+            cout << "\nTarget " << target << " found at index " << mid <<endl;
             cout << "Total comparisons: " << count << endl;
             return mid;
         }
@@ -22,8 +20,6 @@ int binarySearch(int arr[], int n, int target, int &count) {
             right = mid - 1;
         }
     }
-
-    cout << "---------------------------------------\n";
     cout << "Target " << target << " not found \n";
     cout << "Total comparisons: " << count << endl;
     return -1;
