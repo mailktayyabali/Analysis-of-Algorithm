@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-    int n; // number of items
+    int n; 
     cout << "Enter number of items: ";
     cin >> n;
 
-    int weight[100], value[100]; // arrays to store weights and values (max 100 items)
+    int weight[100], value[100];
     cout << "Enter weight and value of each item:\n";
     for (int i = 0; i < n; i++) {
         cout << "Item " << i + 1 << " - Weight: ";
@@ -15,13 +15,10 @@ int main() {
         cin >> value[i];
     }
 
-    int W; // knapsack capacity
+    int W;
     cout << "Enter maximum capacity of knapsack: ";
     cin >> W;
-
-    int dp[101][101]; // dp[i][w] = max value using first i items with capacity w
-
-    // Initialize DP table
+    int dp[101][101];
     for (int i = 0; i <= n; i++) {
         for (int w = 0; w <= W; w++) {
             if (i == 0 || w == 0){
