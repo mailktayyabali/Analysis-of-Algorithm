@@ -28,6 +28,7 @@ int main() {
             arr[minIndex] = temp;
         }
     }
+    
     Appointment selected[5];
     int count = 0;
 
