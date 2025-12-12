@@ -23,11 +23,11 @@ int main() {
             if (arr[j].end < arr[minIndex].end) {
                 minIndex = j;
             }
-        Appointment temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
+            Appointment temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
     }
-}
     Appointment selected[5];
     int count = 0;
 
