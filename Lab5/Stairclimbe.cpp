@@ -26,3 +26,4 @@ int main() {
     cout << "Number of distinct ways to reach the top: " << countWays(n) << endl;
     return 0;
 }
+          
